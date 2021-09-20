@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ExTest</string>
+    <string name="server_addr">http://172.30.1.55:8081</string>
+    <string name="kakao_app_key">7503536ae8d384f7b3e80f8e3f61eba2</string>
+    <string name="hint_address">주소</string>
+    <string name="hint_address_detail">주소</string>
+    <string name="msg_search_address">주소</string>
+    <string name="imageFilePath">file:///Users/jinhyeongdu/Desktop/gojidooftp/ProjectTest_01/bin/main/static/upload/</string>
+</resources>

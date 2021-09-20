@@ -1,0 +1,74 @@
+#coverall{
+	margin:0 auto;
+	width:70%;
+	box-sizing: border-box;
+    border: solid 1px #d8d8d8;
+    background-color: #ffffff;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+.joinform{	
+/*     padding: 0 50px 50px; */
+    margin:0 auto;
+    width:90%;
+    margin-top: 47px;
+}
+.joinid, .joinpw, .joinpwcheck, .joinname, .joinnick, .joinmail{
+	margin:0 auto;
+	width:90%;
+	margin-top:20px;
+}
+.joinform  label{
+	width:140px;
+	font-size:1.0em;
+}
+.joinform  input{
+	width:200px;
+}
+/* .joinid input{
+	width:280px;
+} */
+#idcheckbtn{
+	margin-left:10px;
+}
+#checkMessage, #passwordCheckMessage, #nameCheckMessage, #nicknameCheckMessage, #eMailCheckMessage{
+	text-align: left;
+	color: red; 
+	font-size: 0.8em;
+	padding-left:155px;
+}
+.checkbox_group {
+    padding-left:55px; 
+    margin-top: 47px;
+    width:480px;
+}
+.checkbox_group input{
+	margin-right:5px;
+}
+#agreement{
+	border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+#agreement div{
+	position: relative;
+    padding: 12px 30px;
+}
+#agreement div button{
+	float:right;
+}
+#agreement #allcheck{
+	margin-bottom: 4px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #cccccc;
+    background-color: #f8f8f8;
+}
+.joinsubmit{
+	margin:0 auto;
+	width:30%;
+	margin-top:40px;
+}
+.joinsubmit input{
+	width:100%;
+	font-size:17px;
+}

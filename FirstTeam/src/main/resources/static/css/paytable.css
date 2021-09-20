@@ -1,0 +1,78 @@
+table{
+	width: 100%;
+    border: 1px solid #d8d8d8;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+table thead {
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+}
+colgroup {
+	display: table-column-group;
+}
+table .table_width.head{
+	width:110px;
+}
+.group_table tr {
+    border: 1px solid #d8d8d8;
+    border-bottom: none;
+}
+.group_table th.group_name {
+    width: 408px;
+    padding-left: 20px;
+    text-align: left;
+}
+.group_table th {
+    padding: 8px 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+}
+.group_table th.price {
+    width: 136px;
+}.group_table th.members {
+    width: 116px;
+}
+table th {
+    box-sizing: border-box;
+    width: 110px;
+    background-color: #f8f8f8;
+    padding: 10px 0 10px 20px;
+    color: #666666;
+    letter-spacing: -1px;
+}
+.group_table td {
+    text-align: center;
+    font-size: 14px;
+}
+.group_table td.group_name {
+    padding-left: 20px;
+    height: 66px;
+    color: #4195f5;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+.attend_user td {
+    padding: 10px 0 10px 20px;
+}
+.attend_payment_info .total_price td {
+    color: #4195f5;
+    font-weight: bold;
+    font-size: 14px;
+}
+col {
+    display: table-column;
+}
+table tbody>tr {
+    border-bottom: 1px solid #d8d8d8;
+}
+td .value_txt {
+    display: inline-block;
+    height: 30px;
+    line-height: 28px;
+    font-weight: bold;
+    vertical-align: middle;
+}

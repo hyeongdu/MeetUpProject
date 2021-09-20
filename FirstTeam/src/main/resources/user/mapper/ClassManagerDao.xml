@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study.springboot.dao.IClassManagerDao">
+	<select id="countJoinClassDao" resultType="int">
+		select count(classid) from classmanager where userid=#{0}
+	</select>	
+	<insert id="applyClassDao">
+		insert into classmanager values (#{tid}, #{title}, #{userid}, #{lat}, #{lon}, #{address}, #{paycheck})
+	</insert>
+	<select id="countNowmemDao" resultType="int">
+		select count(*) from classmanager where classid=#{0}
+	</select>
+	<select id="getClassMemberDao" resultType="int">
+		select count(*) from classmanager where classid=#{classid} and userid=#{userid}
+	</select>
+	<select id="getApplyClassInfoDao" resultType="com.study.springboot.dto.ClassManagerDto">
+		select * from classmanager where userid=#{0}
+	</select>
+	<delete id="quitClassDao">
+		delete classmanager where userid=#{userid} and classid=#{tid}
+	</delete>
+	<select id="getApplyMemberDao" resultType="java.util.List">
+		select userid from classmanager where classid=#{0}
+	</select>
+	<select id="getClassInfo" resultType="com.study.springboot.dto.ClassManagerDto">
+		select * from classmanager where classid=#{0}
+	</select>
+	
+	<select id="locationList" resultType="com.study.springboot.dto.ClassManagerDto">
+		select * from classmanager where classid=#{0}
+	</select>
+	<update id="updatePaycheck">
+		update classmanager set paycheck='y' where classid=#{param1} and userid=#{param2}
+	</update>
+</mapper>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study.springboot.dao.IBoardDao">
+	<select id="AllBoardInfoDao" resultType="com.study.springboot.dto.BoardDto">
+		select * from board order by tdate
+	</select>
+	<select id="viewClassInfoDao" resultType="com.study.springboot.dto.BoardDto">
+		select * from board where tid=#{0}
+	</select>
+	<select id="getClassInfoDao" resultType="com.study.springboot.dto.BoardDto">
+		select * from board where tid=#{0}
+	</select>
+	<update id="addMemnumDao">
+		update board set tnownum=tnownum+1 where tid=#{0}
+	</update>
+	<update id="deleteMemnumDao">
+      update board set tnownum=tnownum-1 where tid=#{0}
+   </update>
+	<select id="getOpenClassInfoDao" resultType="com.study.springboot.dto.BoardDto">
+		select * from board where tuserid=#{0} order by tid desc
+	</select>
+	<select id="countOpenClassDao" resultType="int">
+		select count(*) from board where tuserid=#{0}
+	</select>
+	 <insert id="meetupwrite">
+      insert into board (tid, tuserid, tcategory, mname, mtel, memail, title, 
+      tintro, tcontent, tfile, classstartdate, classenddate, regstartdate, 
+      regenddate, tspacetype, tspace, thit, tgroup, tmemnum, tnownum, payment, price) 
+      values (seq_board.nextval, #{param1}, #{param2}, #{param3}, #{param4}, #{param5}, 
+      #{param6}, #{param7}, #{param8}, #{param9}, #{param10}, #{param11}, #{param12}, 
+      #{param13}, #{param14}, #{param15}, 0, 0, #{param16}, 0, #{param17}, #{param18})
+   </insert>
+   <update id="modwriteDao">
+      update board set tcategory=#{param2}, mname=#{param3}, mtel=#{param4}, memail=#{param5}, title=#{param6}, 
+      tintro=#{param7}, tcontent=#{param8}, tfile=#{param9}, classstartdate=#{param10}, classenddate=#{param11}, regstartdate=#{param12}, 
+      regenddate=#{param13}, tspacetype=#{param14}, tspace=#{param15}, tmemnum=#{param16}, payment=#{param17}, price=#{param18} where tid=#{param19}
+   </update>
+   <update id="modnfwriteDao">
+      update board set tcategory=#{param2}, mname=#{param3}, mtel=#{param4}, memail=#{param5}, title=#{param6}, 
+      tintro=#{param7}, tcontent=#{param8}, classstartdate=#{param9}, classenddate=#{param10}, regstartdate=#{param11}, 
+      regenddate=#{param12}, tspacetype=#{param13}, tspace=#{param14}, tmemnum=#{param15}, payment=#{param16}, price=#{param17} where tid=#{param18}
+     
+   </update>
+   <update id="fixaddress">
+		update board set tspacetype='locfix', tspace=#{param2} where tid=#{param1}
+	</update>
+	<select id="checkManIdDao" resultType="string">
+		select tuserid from board where tid=#{0}
+	</select>
+</mapper>	

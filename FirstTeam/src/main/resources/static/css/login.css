@@ -1,0 +1,87 @@
+#coverall{
+	margin:0 auto;
+	width:70%;
+	box-sizing: border-box;
+    border: solid 1px #d8d8d8;
+    background-color: #ffffff;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+.loginform{	
+/*     padding: 0 50px 50px; */
+    margin:0 auto;
+    width:90%;
+    margin-top: 40px;
+}
+.loginid, .loginpw, .errorcheckmsg{
+	padding: 0 9px;
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin-bottom: 10px;
+}
+.errorcheckmsg {
+	text-align: left;
+	color: red; 
+	font-size: 1.0em;
+	padding-left:10px;
+}
+.loginform  input{
+	padding: 0 9px;
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+	color: hsl(var(--bgColorH), var(--bgColorS), var(--bgColorL));
+    background: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
+    font-size:14px;
+    font-weight: bold;
+    margin-top: 15px;
+    order: 4;
+    outline: 1px dashed transparent;
+    outline-offset: 2px;
+    padding-left: 0;
+    text-transform: uppercase;
+    margin:0 auto;
+    padding: 0 9px;
+    width: 80%;
+}
+#snsbtn{
+	font-size:14px;
+    font-weight: bold;
+    margin-top: 0.625rem;
+    order: 4;
+    outline: 1px dashed transparent;
+    outline-offset: 2px;
+    padding-left: 0;
+    text-transform: uppercase;
+    padding: 0 9px;
+    width: 80%;
+}
+input[type="button"]{
+	font-size:14px;
+    font-weight: bold;
+    margin-top: 0.625rem;
+    order: 4;
+    outline: 1px dashed transparent;
+    outline-offset: 2px;
+    padding-left: 0;
+    text-transform: uppercase;
+    margin:0 auto;
+    padding: 0 9px;
+    width: 80%;
+}	
+#naverlogin{
+	margin-top:40px;
+}
+#kakaologin, #googlelogin{
+	margin-top:10px;
+}
+.recjoin{
+	margin:0 auto;
+	width:70%;
+	margin-top:15px;
+	text-align: center;
+}

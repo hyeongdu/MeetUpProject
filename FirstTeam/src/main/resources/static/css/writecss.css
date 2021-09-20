@@ -1,0 +1,17 @@
+#searchdiv{
+	margin:0 auto;
+	width:80%;
+
+}
+#searchdiv input{
+	float:left;
+	width:60%;
+	margin-left:100px;
+	margin-bottom:10px;
+}
+
+#searchWordbtn{
+	float:left;
+	width:15%;
+	margin-left:10px;
+}
